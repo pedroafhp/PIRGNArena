@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>RGN Arena</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h1>RGN Arena</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Acessar.php">Login</a></li>
+            <li><a href="Noticias.html">Últimas Notícias</a></li>
+            <li><a href="Jogos.html">Jogos</a></li>
+            <li><a href="ColocacoesBrasileirao.html">Tabela Brasileirão</a></li>
+            <li><a href="ColocacoesPremier.html">Tabela Premier</a></li>
+            <li><a href="ColocacoesChampions.html">Tabela Champions</a></li>
+            <li><a href="Recompensas.html">Recompensas</a></li>
+        </ul>
+    </nav>
+</header>
+ 
+  <!-- Fim do NavBar -->
+ 
+ 
+  <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #181818;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+ 
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+ 
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+ 
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+ 
+    .nav-button {
+      background-color: #282828;
+      border: 1px solid #444;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+ 
+    .nav-button:hover {
+      background-color: #383838;
+    }
+ 
+    .match-card1{
+      background-color: #282828;
+      border: 1px solid #444;
+      padding: 20px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+ 
+    .match-info1 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+ 
+    .match-team {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+ 
+    .match-team-logo {
+      width: 30px;
+      height: 30px;
+    }
+ 
+    .match-score {
+      font-size: 20px;
+      font-weight: bold;
+    }
+ 
+    .match-details {
+      font-size: 14px;
+    }
+ 
+    .play-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+ 
+    .play-button:hover {
+      background-color: #45a049;
+    }
+ 
+    .match-card1{
+      margin-left: 53%;
+      margin-right: 1%;
+      margin-top: 15px;
+    }
+    .match-info1{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+ 
+ 
+    .match-card2{
+      margin-left: 2%;
+      margin-right: 52%;
+      margin-bottom:1%;
+    }
+    .match-info2{
+      margin-left: 12%;
+      margin-right: 12%;
+    }
+ 
+ 
+    .match-card2{
+      background-color: #282828;
+      border: 1px solid #444;
+      padding: 20px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+ 
+    .match-info2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+ 
+    h1{
+      margin-left: 7%;
+    }
+  </style>
+</head>
+<body>
+  <div class="match-card1">
+    <div class="match-info1">
+      <div class="match-team">
+      </div>
+      <div class="match-score"></div>
+      <div class="match-team">
+        <img src="../Imagens/Paulistão_Sicred_2025.png.png" alt="" class="match-team-logo" style="height: 15%; width: 50%;"><br> <h1>Classificação</h1>
+        <span></span>
+      </div>
+    </div>
+    <div class="match-details" style="margin-left:-3%;"></div>
+   
+  </div>
+  <div class="match-card1">
+    <div class="match-info1">
+      <div class="match-team"> Grupo A    
+        <img src="../Imagens/Corinthians_simbolo.png.png" alt="Time 3" class="match-team-logo">
+        <span>1º Corinthians</span>
+      </div>
+      <div class="match-score"></div>
+      <div class="match-team"> |
+        <img src="../Imagens/Mirassol_FC_logo.png.png" alt="Time 4" class="match-team-logo">
+        <span>2º Mirassol</span>
+      </div>
+    </div>
+    <div class="match-details"></div>
+    <button class="play-button"><a href="https://www.google.com/search?q=campeonato+paulista+classifica%C3%A7%C3%A3o+grupo+a&sca_esv=331748ed294b5afd&rlz=1C1GCEA_enBR1146BR1146&biw=1600&bih=773&ei=TI2qZ6XaB8ba5OUP3LaCuAI&ved=0ahUKEwilsJvUorqLAxVGLbkGHVybACcQ4dUDCBA&uact=5&oq=campeonato+paulista+classifica%C3%A7%C3%A3o+grupo+a&gs_lp=Egxnd3Mtd2l6LXNlcnAiK2NhbXBlb25hdG8gcGF1bGlzdGEgY2xhc3NpZmljYcOnw6NvIGdydXBvIGEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMggQABiiBBiJBUj9PVAeWOU8cAN4AJABAJgBd6ABqQmqAQM2Lja4AQPIAQD4AQGYAg6gAvEIwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgILEAAYgAQYsQMYgwHCAgUQABiABJgDAIgGAZAGFLoGBggBEAEYCJIHAzguNqAH4Hg&sclient=gws-wiz-serp#sie=lg;/g/11y8y_nwnv;2;/m/0528td;st;fp;1;;;"target="_blank">Saiba mais</a></button>
+ 
+  </div>
+  <div class="match-card1">
+    <div class="match-info1">
+      <div class="match-team"> Grupo B
+        <img src="../Imagens/Guarani-fc-logo-esudo-1.png.png" alt="Time 3" class="match-team-logo">
+        <span> 1º Guarani </span>
+      </div>
+      <div class="match-score"></div>
+      <div class="match-team"> |
+        <img src="../Imagens/Portuguesa_de_desportos_Escudo_2012-Presente.png.png" alt="Time 4" class="match-team-logo">
+        <span> 2º Portuguesa </span>
+      </div>
+    </div>
+    <div class="match-details" style="margin-left:-7%;"></div>
+    <button class="play-button"><a href="https://www.google.com/search?q=campeonato+paulista+classifica%C3%A7%C3%A3o+grupo+a&sca_esv=331748ed294b5afd&rlz=1C1GCEA_enBR1146BR1146&biw=1600&bih=773&ei=TI2qZ6XaB8ba5OUP3LaCuAI&ved=0ahUKEwilsJvUorqLAxVGLbkGHVybACcQ4dUDCBA&uact=5&oq=campeonato+paulista+classifica%C3%A7%C3%A3o+grupo+a&gs_lp=Egxnd3Mtd2l6LXNlcnAiK2NhbXBlb25hdG8gcGF1bGlzdGEgY2xhc3NpZmljYcOnw6NvIGdydXBvIGEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMggQABiiBBiJBUj9PVAeWOU8cAN4AJABAJgBd6ABqQmqAQM2Lja4AQPIAQD4AQGYAg6gAvEIwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgILEAAYgAQYsQMYgwHCAgUQABiABJgDAIgGAZAGFLoGBggBEAEYCJIHAzguNqAH4Hg&sclient=gws-wiz-serp#sie=lg;/g/11y8y_nwnv;2;/m/0528td;st;fp;1;;;"target="_blank">Saiba mais</a></button>
+  </div>
+  <div class="match-card1">
+    <div class="match-info1">
+      <div class="match-team"> Grupo C
+        <img src="../Imagens/Brasao_do_Sao_Paulo_Futebol_Clube.png.png" alt="Time 3" class="match-team-logo">
+        <span>1º São Paulo</span>
+      </div>
+      <div class="match-score"></div>
+      <div class="match-team">  |
+        <img src="../Imagens/GrêmioNovorizontino.png.png" alt="Time 4" class="match-team-logo">
+        <span>2º Novohorizontino</span>
+      </div>
+    </div>
+    <div class="match-details" style="margin-left:-1%;"></div>
+    <button class="play-button"><a href="https://www.google.com/search?q=campeonato+paulista+classifica%C3%A7%C3%A3o+grupo+a&sca_esv=331748ed294b5afd&rlz=1C1GCEA_enBR1146BR1146&biw=1600&bih=773&ei=TI2qZ6XaB8ba5OUP3LaCuAI&ved=0ahUKEwilsJvUorqLAxVGLbkGHVybACcQ4dUDCBA&uact=5&oq=campeonato+paulista+classifica%C3%A7%C3%A3o+grupo+a&gs_lp=Egxnd3Mtd2l6LXNlcnAiK2NhbXBlb25hdG8gcGF1bGlzdGEgY2xhc3NpZmljYcOnw6NvIGdydXBvIGEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMggQABiiBBiJBUj9PVAeWOU8cAN4AJABAJgBd6ABqQmqAQM2Lja4AQPIAQD4AQGYAg6gAvEIwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgILEAAYgAQYsQMYgwHCAgUQABiABJgDAIgGAZAGFLoGBggBEAEYCJIHAzguNqAH4Hg&sclient=gws-wiz-serp#sie=lg;/g/11y8y_nwnv;2;/m/0528td;st;fp;1;;;" target="_blank">Saiba Mais</a></button>
+  </div>
+  <div class="match-card1">
+    <div class="match-info1">
+      <div class="match-team"> Grupo D
+        <img src="../Imagens/sao-bernardo-fc-logo.png.png" alt="Time 3" class="match-team-logo">
+        <span>1º São Bernardo</span>
+      </div>
+      <div class="match-score"></div>
+      <div class="match-team"> |
+        <img src="../Imagens/ponte-preta-logo-escudo-0.png.png" alt="Time 4" class="match-team-logo">
+        <span>2º Ponte Preta</span>
+      </div>
+    </div>
+    <div class="match-details"></div>
+    <button class="play-button"><a href="https://www.google.com/search?q=campeonato+paulista+classifica%C3%A7%C3%A3o+grupo+a&sca_esv=331748ed294b5afd&rlz=1C1GCEA_enBR1146BR1146&biw=1600&bih=773&ei=TI2qZ6XaB8ba5OUP3LaCuAI&ved=0ahUKEwilsJvUorqLAxVGLbkGHVybACcQ4dUDCBA&uact=5&oq=campeonato+paulista+classifica%C3%A7%C3%A3o+grupo+a&gs_lp=Egxnd3Mtd2l6LXNlcnAiK2NhbXBlb25hdG8gcGF1bGlzdGEgY2xhc3NpZmljYcOnw6NvIGdydXBvIGEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMggQABiiBBiJBUj9PVAeWOU8cAN4AJABAJgBd6ABqQmqAQM2Lja4AQPIAQD4AQGYAg6gAvEIwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgILEAAYgAQYsQMYgwHCAgUQABiABJgDAIgGAZAGFLoGBggBEAEYCJIHAzguNqAH4Hg&sclient=gws-wiz-serp#sie=lg;/g/11y8y_nwnv;2;/m/0528td;st;fp;1;;;" target="_blank">Saiba Mais</a></button>
+  </div>
+ 
+ 
+<!--  -----------------------------------------------------------------------------------  -->
+ 
+<div class="match-card2" style="margin-top:-36%;">
+  <div class="match-info2">
+    <div class="match-team">
+    </div>
+    <div class="match-score"></div>
+    <div class="match-team">
+      <img src="../Imagens/premier.png.png"  alt="" class="match-team-logo" style="height: 15%; width: 19%;"><h1>Noticias da Semana</h1>
+      <span></span>
+    </div>
+  </div>
+  <div class="match-details" style="margin-left:-3%;"></div>
+ 
+</div>
+<div class="match-card2">
+  <div class="match-info2">
+    <div class="match-team">  
+      <img src="../Imagens/vinijr.png.png" style="height: 15%; width: 55%;" alt="Time 3" class="match-team-logo">
+      <span>Melhor em campo, Vini Jr. diz que provocação do City o motivou: "Não tenho medo de torcida"</span>
+    </div>
+    <div class="match-score"></div>
+  </div>
+  <div class="match-details"></div>
+  <button class="play-button"><a href="https://ge.globo.com/futebol/futebol-internacional/noticia/2025/02/11/vini-jr-e-eleito-o-melhor-em-campo-em-virada-do-real-madrid-sobre-o-city.ghtml"target="_blank">Saiba mais</a></button>
+ 
+</div>
+<div class="match-card2">
+  <div class="match-info2">
+    <div class="match-team">
+      <img src="../Imagens/ney.png.png" style="height: 15%; width: 50%;" alt="Time 3" class="match-team-logo">
+      <span> Escalação do Santos: Neymar será titular contra o Corinthians</span>
+    </div>
+  </div>
+  <div class="match-details" style="margin-left:-7%;"></div>
+  <button class="play-button"><a href="https://ge.globo.com/sp/santos-e-regiao/futebol/times/santos/noticia/2025/02/11/escalacao-do-santos-neymar-sera-titular-contra-o-corinthians.ghtml"target="_blank">Saiba mais</a></button>
+</div>
+ 
+ 
+ 
+</body>
+</html>
+ 
+<footer>
+  <div class="social-links">
+      <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+  </div>
+  <p>&copy; 2025 RGN Arena - Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

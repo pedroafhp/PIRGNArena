@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>FutSport</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h1>Jogos da Semana</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Acessar.php">Login</a></li>
+            <li><a href="Noticias.html">Últimas Notícias</a></li>
+            <li><a href="Jogos.html">Jogos</a></li>
+            <li><a href="ColocacoesBrasileirao.html">Tabela Brasileirão</a></li>
+            <li><a href="ColocacoesPremier.html">Tabela Premier</a></li>
+            <li><a href="ColocacoesChampions.html">Tabela Champions</a></li>
+            <li><a href="Recompensas.html">Recompensas</a></li>
+        </ul>
+    </nav>
+</header>
+ 
+  <!-- Fim do NavBar -->
+ 
+ 
+  <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #181818;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+ 
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+ 
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+ 
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+ 
+    .nav-button {
+      background-color: #282828;
+      border: 1px solid #444;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+ 
+    .nav-button:hover {
+      background-color: #383838;
+    }
+ 
+    .match-card {
+      background-color: #282828;
+      border: 1px solid #444;
+      padding: 20px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+ 
+    .match-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+ 
+    .match-team {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+ 
+    .match-team-logo {
+      width: 30px;
+      height: 30px;
+    }
+ 
+    .match-score {
+      font-size: 20px;
+      font-weight: bold;
+    }
+ 
+    .match-details {
+      font-size: 14px;
+    }
+ 
+    .play-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+ 
+    .play-button:hover {
+      background-color: #45a049;
+    }
+ 
+    .match-card{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .match-info{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  </style>
+</head>
+<body>
+  <div class="match-card">
+    <div class="match-info">
+      <div class="match-team">
+        <img src="../Imagens/FCBarcelona.png.png" alt="Time 1" class="match-team-logo" >
+        <span>Barcelona</span>
+      </div>
+      <div class="match-score">2 - 2</div>
+      <div class="match-team">
+        <img src="../Imagens/Logo_Atalanta_Bergamo.png.png" alt="Time 2" class="match-team-logo">
+        <span>Atalanta</span>
+      </div>
+    </div>
+    <div class="match-details" style="margin-left:-3%;">Data: Qua 29/01</div>
+    <button class="play-button"><a href="https://www.youtube.com/watch?v=m6BvUwVJkrE"target="_blank">Assistir</a></button>
+  </div>
+  <div class="match-card">
+    <div class="match-info">
+      <div class="match-team">
+        <img src="../Imagens/Girona_FC.png.png" alt="Time 3" class="match-team-logo">
+        <span>Girona</span>
+      </div>
+      <div class="match-score">1 - 2</div>
+      <div class="match-team">
+        <img src="../Imagens/Arsenal_FC.png.png" alt="Time 4" class="match-team-logo">
+        <span>Arsenal</span>
+      </div>
+    </div>
+    <div class="match-details">Data: Qua 29/01</div>
+    <button class="play-button"><a href="https://www.youtube.com/watch?v=4mcQlnXRpQg"target="_blank">Assistir</a></button>
+  </div>
+  <div class="match-card">
+    <div class="match-info">
+      <div class="match-team">
+        <img src="../Imagens/Real_Madrid.png.png" alt="Time 3" class="match-team-logo">
+        <span>Real Madrid</span>
+      </div>
+      <div class="match-score">3 - 0</div>
+      <div class="match-team">
+        <img src="../Imagens/SB29_logo.png.png" alt="Time 4" class="match-team-logo">
+        <span>Stade Brestois</span>
+      </div>
+    </div>
+    <div class="match-details" style="margin-left:-7%;">Data: Qua 29/01</div>
+    <button class="play-button"><a href="https://www.youtube.com/watch?v=Qa5Ws9Oqtms"target="_blank">Assistir</a></button>
+  </div>
+  <div class="match-card">
+    <div class="match-info">
+      <div class="match-team">
+        <img src="../Imagens/Manchester_City_Football_Club.png.png" alt="Time 3" class="match-team-logo">
+        <span>City</span>
+      </div>
+      <div class="match-score">3 - 1</div>
+      <div class="match-team">
+        <img src="../Imagens/Club_Brugge_KV_Logo.png.png" alt="Time 4" class="match-team-logo">
+        <span>Club Brugge</span>
+      </div>
+    </div>
+    <div class="match-details" style="margin-left:-1%;">Data: Qua 29/01</div>
+    <button class="play-button"><a href="https://www.youtube.com/watch?v=gyyYsTLR8zQ"target="_blank">Assistir</a></button>
+  </div>
+  <div class="match-card">
+    <div class="match-info">
+      <div class="match-team">
+        <img src="../Imagens/PSV_Eindhoven_escudo.png.png" alt="Time 3" class="match-team-logo">
+        <span>PSV</span>
+      </div>
+      <div class="match-score">3 - 2</div>
+      <div class="match-team">
+        <img src="../Imagens/Liverpool_FC.png.png" alt="Time 4" class="match-team-logo">
+        <span>Liverpool</span>
+      </div>
+    </div>
+    <div class="match-details">Data: Qua 29/01</div>
+    <button class="play-button"><a href="https://www.youtube.com/watch?v=OfmEEDgRfps"target="_blank">Assistir</a></button>
+  </div>
+ 
+ 
+</body>
+</html>
+ 
+<footer>
+  <div class="social-links">
+      <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+  </div>
+  <p>&copy; 2025 RGN Arena - Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

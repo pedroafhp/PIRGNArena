@@ -1,0 +1,15 @@
+body{
+    background-image: url(https://th.bing.com/th/id/OIP.paK33pld0qiU0bNz7gLhcgHaE8?rs=1&pid=ImgDetMain);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
