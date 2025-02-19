@@ -26,6 +26,7 @@
         <select type="submit" name="tCampo">
             <option value="tipo">Selecione</option>
             <option value="nome">Nome</option>
+            <option value="nomeSocial">Nome Social</option>
             <option value="telefone">Telefone</option>
             <option value="email">Email</option>
             <option value="endereco">Endereço</option>

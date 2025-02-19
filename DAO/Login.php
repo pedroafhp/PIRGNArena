@@ -7,14 +7,14 @@ class Login {
     public function loginPessoa(Conexao $conexao, string $cpf) {
         try {
             $conn = $conexao->conectar();
-            $sql  = "select codigo from Cliente where codigo = '$cpf'";
+            $sql  = "select cpf from Cliente where cpf = '$cpf'";
             $result = mysqli_query($conn,$sql);
             while($dados = mysqli_fetch_Array($result))
             {
                
-                if($dados['codigo'] == $cpf && $dados['tipo'] == 1){
+                if($dados['cpf'] == $cpf && $dados['tipo'] == 1){
                     header('Location: ..\Telas\MenuCliente.php');
-                }else if($dados['codigo'] == $cpf && $dados['tipo'] == 2){
+                }else if($dados['cpf'] == $cpf && $dados['tipo'] == 2){
                     header('Location: ..\Telas\MenuGerente.php');
                 }
             }

@@ -98,13 +98,17 @@
 
 
     .formularioCadastro{
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-left: 40%;
+        margin-right: 40%;
         padding: 0px;
 
     }
 
     .mb-3{
+        color: white;
+    }
+
+    .else{
         color: white;
     }
     </style>
@@ -137,7 +141,7 @@
     </div>
     <div class="mb-3">
         <label for="lNomeSocial" class="form-label">Nome Social</label>
-        <input type="text" class="form-control" id="tNomeSocial" name="tNomeSocial" placeholder="Informe seu nome social (opcional)">
+        <input type="text" class="form-control" id="tNomeSocial" name="tNomeSocial" placeholder="(Opcional)">
     </div>   
     <div class="mb-3">
         <label for="lDtaNascimento" class="form-label">Data de Nascimento</label>
@@ -153,7 +157,7 @@
     </div>
     <div class="mb-3">
     <label for="lSenha" class="form-label">Senha</label>
-    <input type="text" class="form-control" id="tSenha" name= "tSenha" placeholder="A senha deve conter letras, números e caracteres">
+    <input type="text" class="form-control" id="tSenha" name= "tSenha" placeholder="letras, números e caracteres">
     </div>
     <div class="mb-3">
     <label for="lSenha" class="form-label">Confirme a Senha</label>
@@ -161,7 +165,7 @@
     </div>
     <div class="mb-3">
         <label for="lEndereco" class="form-label">Endereço</label>
-        <input type="text" class="form-control" id="tEndereco" name="tEndereco" placeholder="Avenida Senador Vergueiro, 400">
+        <input type="text" class="form-control" id="tEndereco" name="tEndereco" placeholder="Av. Senador Vergueiro, 40">
     </div>
     <div class="mb-3">
         <label for="lGenero" class="form-label">Genero</label>
@@ -173,7 +177,7 @@
         <?php
             $conexao = new Conexao();//conectar no banco
 
-            if(isset($_POST['tCpf']) ){
+            if(isset($_POST['tCpf']) && isset($_POST['tCpf']) == 0){
                 $cpf = $_POST['tCpf'];
                 $nome = $_POST['tNome'];
                 $nomeSocial = $_POST['tNomeSocial'];
@@ -183,10 +187,12 @@
                 $senha = $_POST['tSenha'];
                 $endereco = $_POST['tEndereco'];
                 $genero = $_POST['tGenero'];
-            //Instaciar
-            $inserir = new Inserir();
-            echo $inserir->cadastrarCliente($conexao,$cpf,$nome,$nomeSocial,$dtaNascimento,$telefone,$email,$senha,$endereco,$genero);
-         }
+                //Instaciar
+                $inserir = new Inserir();
+                echo $inserir->cadastrarCliente($conexao,$cpf,$nome,$nomeSocial,$dtaNascimento,$telefone,$email,$senha,$endereco,$genero);
+            }else{
+                echo "<br><br>Preencha os campos!";
+            }
         ?>
     </button>
     </form>

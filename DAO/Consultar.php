@@ -8,13 +8,14 @@ use PHP\Modelo\DAO\Conexao;
        {
             try{
                 $conn = $conexao->conectar();
-                $sql  = "select * from Cliente where codigo = '$cpf'";
+                $sql  = "select * from Cliente where cpf = '$cpf'";
                 $result = mysqli_query($conn,$sql);
                 while($dados = mysqli_fetch_Array($result))
                 {
-                    if($dados['codigo'] == $cpf){
-                        return "<br>CPF: ".$dados['codigo'].
+                    if($dados['cpf'] == $cpf){
+                        return "<br>CPF: ".$dados['cpf'].
                             "<br>Nome: ".$dados['nome'].
+                            "<br>Nome Social: ".$dados['nomeSocial'].
                             "<br>Data de Nascimento: ".$dados['dtaNascimento'].
                             "<br>Telefone: ".$dados['telefone'].
                             "<br>Endereço: ".$dados['endereco'].
@@ -33,11 +34,11 @@ use PHP\Modelo\DAO\Conexao;
        {
             try{
                 $conn = $conexao->conectar();
-                $sql  = "select * from Cliente where codigo = '$cpf'";
+                $sql  = "select * from Cliente where cpf = '$cpf'";
                 $result = mysqli_query($conn,$sql);
                 while($dados = mysqli_fetch_Array($result))
                 {
-                    if($dados['codigo'] == $cpf){
+                    if($dados['cpf'] == $cpf){
                         return true;
                     }
                 }

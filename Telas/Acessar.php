@@ -101,7 +101,7 @@
 <header>
         <img src="" alt="">
         <nav>
-        <a href="CadastrarCliente.php" class="button-cor">Cadastre-se</a> <a href="TelaPrincipal.html" class="button-cor">Voltar</a> <a href="ConsultarCliente.php" class="button-cor">Consultar Cadastro</a> <a href="AtualizarCliente.php" class="button-cor">Atualizar Cadastro</a> <a href="ExcluirCliente.php" class="button-cor">Excluir Cadastro</a>
+        <a href="TelaPrincipal.html" class="button-cor">Inicio</a> <a href="CadastrarCliente.php" class="button-cor">Cadastre-se</a> <a href="ConsultarCliente.php" class="button-cor">Consultar Cadastro</a> <a href="AtualizarCliente.php" class="button-cor">Atualizar Cadastro</a> <a href="ExcluirCliente.php" class="button-cor">Excluir Cadastro</a>
         </nav>
     </header>
     <section class="hero">

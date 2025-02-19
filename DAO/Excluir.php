@@ -12,7 +12,7 @@
             $logico = $consultar->consultarCPF($conexao, $cpf);
 
             if($logico == true){
-                $sql  = "delete from Cliente where codigo = '$cpf'";
+                $sql  = "delete from Cliente where cpf = '$cpf'";
                 $result = mysqli_query($conn,$sql);
                 mysqli_close($conn);
                 if ($result){

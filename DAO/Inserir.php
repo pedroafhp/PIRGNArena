@@ -8,6 +8,7 @@
         function cadastrarCliente(Conexao $conexao,
                                         string $cpf,
                                         string $nome,
+                                        string $nomeSocial,
                                         string $dtaNascimento,
                                         string $telefone,
                                         string $email,
@@ -17,7 +18,8 @@
          ){
             try{
                 $conn = $conexao->conectar();//Abrir banco
-                $sql = "Insert into cliente(codigo, nome, dtaNascimento, telefone, email, senha, endereco, genero) values('$cpf','$nome','$dtaNascimento','$telefone','$email','$senha','$endereco','$genero')";
+                $sql = "Insert into cliente(cpf, nome, nomeSocial, dtaNascimento, telefone, email, senha, endereco, genero) 
+                values('$cpf','$nome','$nomeSocial','$dtaNascimento','$telefone','$email','$senha','$endereco','$genero')";
                 $result = mysqli_query($conn,$sql);
                 mysqli_close($conn);
                 //Verificar o resultado
